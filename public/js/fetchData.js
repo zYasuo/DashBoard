@@ -1,5 +1,10 @@
 // public/js/fetchData.js
 
+socket.on('novaOcorrencia', (ocorrencia) => {
+    // Aqui, você pode pegar o objeto 'ocorrencia' e adicionar ao seu container
+    addOcorrenciaToContainer(ocorrencia);
+});
+
 /**
  * Busca "ocorrencias" da API e as exibe em formato de cartões.
  */
