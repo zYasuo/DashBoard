@@ -3,11 +3,16 @@ DashBoard inspirado no Grafana e Monitoramento Utilizando Node
 
 # Estrutura do Projeto
 dist/: Pasta onde os estilos compilados do Tailwind CSS são armazenados.
+
 models/: Contém modelos Sequelize para interagir com o banco de dados.
+
 public/: Arquivos estáticos usados no frontend, incluindo JavaScript para buscar e exibir dados.
 routes/: Definições das rotas da API usando o Express.js.
+
 views/: Arquivos HTML estáticos usados para renderizar a interface do usuário.
+
 server.js: Arquivo principal que inicializa o servidor e define alguns middlewares e rotas.
+
 package-lock.json & package.json: Arquivos de configuração do projeto e lista de dependências.
 
 # Funcionalidades
