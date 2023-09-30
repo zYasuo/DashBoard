@@ -3,8 +3,8 @@
 const Sequelize = require('sequelize');
 
 // Usuario do Banco de Dados
-const sequelize = new Sequelize('Cadastro', 'cadastro', 'Nrnoc4@35*', {
-    host: '10.50.50.30',
+const sequelize = new Sequelize('Cadastro', 'cadastro', 'teste*', {
+    host: 'localhost',
     dialect: 'mariadb',
     logging: false // Defina como true se quiser ver logs das queries no console
 });
