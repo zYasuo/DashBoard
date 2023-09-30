@@ -1,2 +1,2 @@
 # DashBoard
-DashBoard inspirado no Grafana e Monitoramento Utilizando Node
+Projeto Pessoal de DashBoard inspirado no Grafana e Monitoramento Utilizando Node
