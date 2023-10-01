@@ -9,6 +9,10 @@ const Ocorrencia = sequelize.define('Ocorrencia', {
         type: DataTypes.STRING,
         allowNull: false
     },
+    node: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
     vlan: {
         type: DataTypes.STRING,
         allowNull: false
@@ -19,7 +23,7 @@ const Ocorrencia = sequelize.define('Ocorrencia', {
     }
     // Você pode adicionar mais campos conforme necessário
 }, {
-    tableName: 'OcorrenciasNR',  // Nome da tabela no banco
+    tableName: 'ocorrenciasdb',  // Nome da tabela no banco
     timestamps: true  // Isso adicionará os campos createdAt e updatedAt automaticamente
 });
 

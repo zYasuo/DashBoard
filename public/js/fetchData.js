@@ -1,5 +1,8 @@
 // public/js/fetchData.js
 
+const socket = io();
+
+
 socket.on('novaOcorrencia', (ocorrencia) => {
     // Aqui, você pode pegar o objeto 'ocorrencia' e adicionar ao seu container
     addOcorrenciaToContainer(ocorrencia);
@@ -31,17 +34,22 @@ function fetchOcorrenciasAndDisplay() {
                 assuntoEl.textContent = `Assunto: ${ocorr.assunto}`;
                 assuntoEl.className = "text-xl font-bold mb-2";
 
-                // Cria e estiliza o conteúdo para "vlan"
+                // Cria e estiliza o conteúdo para "Node"
+                const nodeEl = document.createElement('p');
+                nodeEl.textContent = `Node: ${ocorr.node}`;
+                nodeEl.className = "mb-2";
+
+                // Cria e estiliza o conteúdo para "Vlan"
                 const vlanEl = document.createElement('p');
-                vlanEl.textContent = `VLAN: ${ocorr.vlan}`;
-                vlanEl.className = "mb-2";
+                vlanEl.textContent = `Vlan: ${ocorr.vlan}`;
 
                 // Cria e estiliza o conteúdo para "assinantes"
                 const assinantesEl = document.createElement('p');
-                assinantesEl.textContent = `Assinantes: ${ocorr.assinantes}`;
+                assinantesEl.textContent = `Assinantes: ${ocorr.vlan}`;
 
                 // Adiciona os elementos ao cartão
                 card.appendChild(assuntoEl);
+                card.appendChild(nodeEl);
                 card.appendChild(vlanEl);
                 card.appendChild(assinantesEl);
 
